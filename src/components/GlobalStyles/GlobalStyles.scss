@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
+@import 'normalize.css';
+
+:root {
+  --dark-color: #333;
+  --light-color: #fff;
+
+  --gray-color: #818992;
+  --gray-light-color: #d3dce6;
+
+  --red-color: #ed4956;
+
+  --primary-color: #e5e5e5;
+  --primary-light-color: #128f8b17;
+  --primary-dark-color: #272c44;
+
+  --shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+  --gradient-image: linear-gradient(to right, var(--primary-color), #e5e5e5);
+
+  --form-input-padding: 14px 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+
+  color: #333;
+}
+
+body {
+  background-color: #fafbfe;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+
+  color: var(--dark-color);
+
+  user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+input,
+button {
+  outline: none;
+  border: 0;
+}
+
+input {
+  background-color: transparent;
+}
+
+button {
+  user-select: none;
+
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

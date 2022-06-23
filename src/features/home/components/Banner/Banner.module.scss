@@ -1,0 +1,58 @@
+@use '../../../../scss' as *;
+
+.container {
+  --banner-left-width: 45%;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 80px;
+
+
+
+
+}
+
+.left {
+  width: var(--banner-left-width);
+
+  color: var(--dark-color);
+
+  h1 {
+    font-size: 4.6rem;
+
+    @include tablet {
+      font-size: 3.8rem;
+      line-height: 1.3;
+    }
+  }
+
+  h3 {
+    font-size: 2.6rem;
+
+    @include tablet {
+      font-size: 2.4rem;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  @include mobile {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.right {
+  width: calc(100% - var(--banner-left-width));
+  margin-top: 40px;
+
+  @include mobile {
+    display: none;
+    width: 0;
+  }
+}

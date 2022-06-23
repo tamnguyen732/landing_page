@@ -1,0 +1,41 @@
+@use '../../../../scss' as *;
+
+.background {
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: calc(100vh + 40px);
+  overflow: hidden;
+
+  @include mobile {
+    min-height: 100vh;
+  }
+
+  @include tablet {
+    min-height: 60vh;
+  }
+
+  &-inner {
+    position: absolute;
+    top: -24.5%;
+    left: -4%;
+
+    width: 120%;
+    height: 100%;
+    border-radius: 40px;
+    transform: rotate(-14deg);
+
+    background-image: var(--gradient-image);
+
+    @include tablet {
+      top: 0;
+      left: 0;
+
+      transform: rotate(0deg);
+      border-radius: 0;
+    }
+  }
+}

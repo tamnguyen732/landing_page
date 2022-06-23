@@ -1,0 +1,31 @@
+.container {
+  width: 450px;
+  max-width: 100%;
+  padding: 14px;
+  box-shadow: var(--shadow);
+
+  background-color: var(--light-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-top: 10px;
+  font-size: 1.4rem;
+
+  input {
+    padding: var(--form-input-padding);
+  }
+}
+
+.form-title {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.submit-btn {
+  padding-block: 15px;
+  width: 100%;
+  height: 48px;
+}

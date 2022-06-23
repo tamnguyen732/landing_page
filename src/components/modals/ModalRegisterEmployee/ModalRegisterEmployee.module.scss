@@ -1,0 +1,13 @@
+.upload {
+  padding: var(--form-input-padding);
+  font-size: 1.4rem;
+  border: 1px solid var(--red-color);
+
+  color: var(--red-color);
+
+  &.selected {
+    border-color: var(--gray-light-color);
+
+    color: var(--dark-color);
+  }
+}

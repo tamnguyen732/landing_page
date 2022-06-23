@@ -1,0 +1,45 @@
+@use '../../scss' as *;
+
+.container {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  padding-inline: 10px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.inner {
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 20px);
+  border-radius: 6px;
+
+  animation: show 160ms ease-out forwards;
+
+  @include mobile {
+    max-height: 80vh;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0.85;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  text-align: center;
+
+  user-select: none;
+  cursor: pointer;
+
+  span {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+  }
+}
+
+.input {
+  display: none;
+}

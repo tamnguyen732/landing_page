@@ -1,0 +1,19 @@
+@use '../../../../scss' as *;
+
+.container {
+  display: flex;
+  gap: 10px;
+  border-radius: 6px;
+  flex-wrap: wrap;
+
+
+  @include mobile {
+    margin-top: 80px;
+  }
+}
+
+.search-btn {
+  gap: 6px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+}

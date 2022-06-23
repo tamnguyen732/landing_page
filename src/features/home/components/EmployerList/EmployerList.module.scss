@@ -1,0 +1,61 @@
+@use '../../../../scss' as *;
+
+.container {
+  margin-top: 100px;
+
+  @include mobile {
+    margin-top: 60px;
+  }
+
+  @include tablet {
+    margin-top: 80px;
+  }
+}
+
+.card-list {
+  --column-count: 3;
+
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  margin-top: 40px;
+  gap: 20px;
+
+  @include mobile {
+    --column-count: 1;
+
+    margin-top: 20px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+
+  background-color: var(--light-color);
+}
+
+.card-img {
+  height: 260px;
+}
+
+.card-info {
+  padding: 15px;
+
+  p {
+    font-size: 1.6rem;
+    margin-top: 5px;
+  }
+
+  & > * {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.card-title {
+  font-size: 2.3rem;
+}

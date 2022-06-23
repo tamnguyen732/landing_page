@@ -1,0 +1,36 @@
+@use '../../scss' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 40px;
+
+  @include tablet {
+    padding-inline: 10px;
+  }
+}
+
+.logo {
+  width: 10.8rem;
+
+  cursor: pointer;
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 1.6rem;
+
+  @include tablet {
+    display: none;
+  }
+
+  li {
+    color: var(--dark-color);
+
+    cursor: pointer;
+    user-select: none;
+  }
+}

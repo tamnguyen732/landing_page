@@ -1,0 +1,15 @@
+@use '../../scss' as *;
+
+body .container {
+  width: 1140px;
+  max-width: 100%;
+  margin-inline: auto;
+
+  @include tablet {
+    padding-inline: 20px;
+  }
+
+  @include mobile {
+    padding-inline: 14px;
+  }
+}

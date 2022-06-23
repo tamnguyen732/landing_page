@@ -1,0 +1,22 @@
+.spinner {
+  width: 20px;
+  height: 20px;
+
+  animation: rotate 850ms linear infinite;
+
+  color: var(--gray-light-color);
+
+  &.dark {
+    color: var(--gray-color);
+  }
+
+  &.light {
+    color: var(--gray-light-color);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}

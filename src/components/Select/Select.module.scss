@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+
+  font-size: 1.4rem;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--form-input-padding);
+  border: 1px solid var(--gray-light-color);
+
+  transition: border-color 150ms ease-in-out;
+
+  cursor: pointer;
+  user-select: none;
+
+  &.active {
+    border-color: var(--primary-color);
+  }
+
+  &:hover {
+    background-color: var(--primary-light-color);
+  }
+}
+
+.field-arrow {
+  padding-inline: 6px;
+}
+
+.list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  max-height: 200px;
+  border: 1px solid var(--gray-light-color);
+  box-shadow: var(--shadow);
+  overflow-y: auto;
+
+  background-color: var(--light-color);
+}
+
+.item {
+  padding: var(--form-input-padding);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-light-color);
+  }
+}
